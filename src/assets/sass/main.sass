@@ -6,7 +6,7 @@ body
 	font-weight: 400
 	font-style: normal
 	color: $blackColor
-	a 
+	a
 		text-decoration: none
 		cursor: pointer
 		@include transition(.4s ease-in-out)
@@ -14,32 +14,70 @@ body
 			color: $redColor
 			text-decoration: none
 			@include transition(.4s ease-in-out)
+	h1, h2, h3
+		color: $blackColor
 header
-	position: relative
-	display: block
 	width: 100%
 	background: $pinkColor
 	color: $whiteColor
 	height: 90px
-	.logo
-		position: absolute
-		top: 50%
-		left: 15px
-		@include translateY(-50%)
-	nav, nav ul, nav ul li
-		margin: 0
-		padding: 0
-	nav
-		position: absolute
-		top: 50%
-		right: 15px
-		@include translateY(-50%)
-		ul li 
-			list-style: none
-			display: inline-block
-			margin-right: 20px
-			&.last
-				margin: 0
-			a
-				font-size: 1.2rem
-				color: $whiteColor
+	.container
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 100%
+		.logo
+			font-family: 'Stalemate', cursive
+			font-size: 3.5rem
+			position: absolute
+			top: 50%
+			left: 15px
+			@include translateY(-50%)
+		nav, nav ul, nav ul li
+			margin: 0
+			padding: 0
+		nav
+			position: absolute
+			top: 50%
+			right: 15px
+			@include translateY(-50%)
+			ul li 
+				list-style: none
+				display: inline-block
+				margin-right: 20px
+				&.last
+					margin: 0
+				a
+					font-size: 1.2rem
+					color: $whiteColor
+					&:hover
+						color: $redColor
+section
+	padding: 30px 0
+.titleBlock
+	height: 70vh
+	background: url(../img/title.jpg) no-repeat
+	background-position: center
+	background-size: cover
+	padding: 0
+	.overlay
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		background: rgba(255, 255, 255, .35)
+		width: 100%
+		height: 100%
+		h1
+			font-family: 'Stalemate', cursive
+			font-size: 7rem
+.describeYour
+	border-bottom: 1px solid $lightGreyColor
+	p
+		padding: 10px 0
+		color: $darkGreyColor
+.titleSmall
+	width: 100%
+	text-align: center
+	padding: 30px 0

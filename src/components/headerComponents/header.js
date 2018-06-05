@@ -10,7 +10,7 @@ class Header extends Component {
 				<div className="container">
 
 	      	<div className="logo">
-	      		LOGO
+	      		<span>Style Blog</span>
 	      	</div>
 
 					<nav>
