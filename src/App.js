@@ -25,7 +25,6 @@ class App extends Component {
             <Route exact path='/' component={HomePage} />
             <Route exact path='/StyleIdeas' component={StyleIdeas} />
             <Route exact path='/Contact' component={Contact} />
-
           <Footer/>
 
         </div>
