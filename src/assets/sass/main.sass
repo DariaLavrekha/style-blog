@@ -14,8 +14,6 @@ body
 			color: $redColor
 			text-decoration: none
 			@include transition(.4s ease-in-out)
-	h1, h2, h3
-		color: $blackColor
 	h1
 		padding: 30px
 header
@@ -24,34 +22,22 @@ header
 	color: $whiteColor
 	height: 90px
 	.container
-		position: relative
 		display: flex
 		justify-content: space-between
 		align-items: center
 		height: 100%
 		.logo
 			font-family: 'Stalemate', cursive
-			font-size: 3.5rem
-			position: absolute
-			top: 50%
-			left: 15px
-			@include translateY(-50%)
 		nav, nav ul, nav ul li
 			margin: 0
 			padding: 0
 		nav
-			position: absolute
-			top: 50%
-			right: 15px
-			@include translateY(-50%)
-			ul li 
+			ul li
 				list-style: none
-				display: inline-block
-				margin-right: 20px
 				&.last
 					margin: 0
 				a
-					font-size: 1.2rem
+					display: block
 					color: $whiteColor
 					&:hover
 						color: $redColor
@@ -98,10 +84,11 @@ section
 	h3	
 		font-family: 'Stalemate', cursive
 		font-size: 4rem
-.styleIdeas
+.styleIdeas, .contactPage
 	.col-xs-12
 		width: 100%
-		text-align: center
+		h1
+			text-align: center
 	img
 		width: 100%
 		padding: 15px 0

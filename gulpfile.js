@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var concatCss = require('gulp-concat-css');
 var minifyCSS = require('gulp-clean-css');
 var prefix = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
@@ -16,10 +17,10 @@ var SASS_DEST = './src/assets/css';
 gulp.task('compile_sass', function(){
 	gulp.src(SASS_SRC)
 	.pipe(sass().on('error', sass.logError))
-	.pipe(prefix('last 15 versions'))
+	.pipe(concatCss('common.css'))
+	.pipe(prefix('last 25 versions'))
 	.pipe(minifyCSS(''))
 	.pipe(rename({suffix: '.min'}))
-	.pipe(changed(SASS_DEST))
 	.pipe(gulp.dest(SASS_DEST));
 });
 

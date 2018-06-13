@@ -12,7 +12,7 @@ import StyleIdeas from './components/pages/styleIdeas';
 import Contact from './components/pages/contact';
 
 //Includes
-import './assets/css/main.min.css';
+import './assets/css/common.min.css';
 
 class App extends Component {
   render() {

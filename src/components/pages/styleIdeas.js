@@ -5,14 +5,14 @@ class StyleIdeas extends Component {
     return (
       <div>
       	<section>
-         <div className="container styleIdeas">
-          <div className="row">
-            <div className="col-xs-12">
-              <h1>
-                Style Ideas
-              </h1>
+          <div className="container styleIdeas">
+            <div className="row">
+              <div className="col-xs-12">
+                <h1>
+                  Style Ideas
+                </h1>
+              </div>
             </div>
-          </div>
           <div className="row">
             <div className="col-xs-12 col-md-4">
               <img src={require('assets/img/1SI.jpg')} alt="style_ideas_1"/>
